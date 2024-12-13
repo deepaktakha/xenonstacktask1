@@ -1,0 +1,240 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url('https://img.pikbest.com/backgrounds/20181112/urban-building-background_2765380.jpg!bw700') no-repeat center center fixed; /* Replace YOUR_IMAGE_LINK with your image URL */
+  background-size: cover; /* Ensures the image covers the whole background */
+  color: #333;
+  display: flex;
+  
+  
+  height: 100vh;
+}
+
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-container {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.logo img {
+  width: 80px;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  color: #007bff;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  color: black;
+}
+
+.input-group {
+  margin-bottom: 1.5em;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8em 1em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+}
+
+.btn-login {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 0.8em;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+  background: #0056b3;
+}
+
+.extra-links {
+  margin-top: 1.5em;
+  font-size: 0.9em;
+  color: #007bff;
+}
+
+.extra-links a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}
+
+#login-message {
+  margin-top: 1em;
+  color: red;
+  font-size: 0.9em;
+}
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 1em 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+#logout-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Listings Container */
+.listings-container {
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 2em;
+  padding: 2em;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1.5em;
+  color:black;
+}
+
+.property-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5em;
+}
+
+.property-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.property-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.property-card h3 {
+  font-size: 1.4em;
+  color: #007bff;
+  margin-bottom: 1em;
+}
+
+
+.property-card p {
+  font-size: 1em;
+  color: #555;
+}
+
+.property-card .price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 0.5em;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+  }
+
+  .property-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .property-list {
+    grid-template-columns: 1fr;
+  }
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.listlogo {
+  width: 50px; /* Adjust size of logo */
+  height: auto;
+  margin-right: 1em;
+}
